@@ -645,9 +645,9 @@ class LitecoinTestnet(Litecoin):
         'electrum-ltc.bysh.me s t',
         'electrum.ltc.xurious.com s t',
     ]
-class CounosCoin(Coin):
-    NAME = "CounosCoin"
-    SHORTNAME = "CSC"
+class CounosCash(Coin):
+    NAME = "CounosCash"
+    SHORTNAME = "CCH"
     NET = "mainnet"
     XPUB_VERBYTES = bytes.fromhex("0488b21e")
     XPRV_VERBYTES = bytes.fromhex("0488ade4")
@@ -660,15 +660,15 @@ class CounosCoin(Coin):
     TX_COUNT = 8908766
     TX_COUNT_HEIGHT = 1105256
     TX_PER_BLOCK = 10
-    RPC_PORT = 11963
+    RPC_PORT = 10495
     REORG_LIMIT = 800
     PEERS = [
       
     ]
 
 
-class CounosCoinTestnet(CounosCoin):
-    SHORTNAME = "XSC"
+class CounosCashTestnet(CounosCoin):
+    SHORTNAME = "XSH"
     NET = "testnet"
     XPUB_VERBYTES = bytes.fromhex("043587cf")
     XPRV_VERBYTES = bytes.fromhex("04358394")
